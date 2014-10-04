@@ -3,7 +3,7 @@
 	<form action="/wall/write_comment_complete" method="post">
 		<input type="hidden" name="post_id" value="<%=@post_comment.id %>">
 		<div style="background-color: #ffffff; width: 400px; border: 2px solid #d3d6db; padding: 15px; word-break: break-all;">
-		<h3 style="color: #0000ff;"><%= @post_comment.name %></h3>
+		<h3 style="color: #0000ff;"><%= @post_comment.name %></h3>&nbsp;
 		<p><%= @post_comment.content%></p>
 		</div><br>
 		<input style="width: 100px;" type="text" name="writer" placeholder="Name">:<input style="width: 300px;" type="text" name="content" placeholder="Write a comment...">
